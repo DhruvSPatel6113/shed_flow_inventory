@@ -8,6 +8,7 @@ import DashboardScreen from './src/screens/DashboardScreen';
 import InventoryListScreen from './src/screens/InventoryListScreen';
 import TransferScreen from './src/screens/TransferScreen';
 import DispatchScreen from './src/screens/DispatchScreen';
+import AIOptimizerScreen from './src/screens/AIOptimizerScreen';
 
 const Tab = createBottomTabNavigator();
 
@@ -37,9 +38,10 @@ export default function App() {
           }}
         >
           <Tab.Screen name="Overview" component={DashboardScreen} options={{ tabBarLabel: 'Shed Matrix' }} />
+          <Tab.Screen name="Optimizer" component={AIOptimizerScreen} options={{ tabBarLabel: 'AI Optimizer' }} />
           <Tab.Screen name="Products" component={InventoryListScreen} options={{ tabBarLabel: 'Inventory' }} />
-          <Tab.Screen name="Transfer" component={TransferScreen} options={{ tabBarLabel: 'Inter-Shed Transfer' }} />
-          <Tab.Screen name="Dispatches" component={DispatchScreen} options={{ tabBarLabel: 'Log Dispatch' }} />
+          <Tab.Screen name="Transfer" component={TransferScreen} options={{ tabBarLabel: 'Transfer' }} />
+          <Tab.Screen name="Dispatches" component={DispatchScreen} options={{ tabBarLabel: 'Dispatch' }} />
         </Tab.Navigator>
       </NavigationContainer>
     </SafeAreaProvider>
