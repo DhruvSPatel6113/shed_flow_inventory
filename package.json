@@ -1,0 +1,23 @@
+{
+  "name": "shed_flow_inventory",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "react-native start",
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "test": "jest",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "react": "18.3.1",
+    "react-native": "0.76.5",
+    "@react-navigation/native": "^6.1.18",
+    "@react-navigation/bottom-tabs": "^6.6.1",
+    "@react-navigation/stack": "^6.4.1",
+    "@react-native-async-storage/async-storage": "^2.1.0",
+    "react-native-safe-area-context": "^4.14.0",
+    "react-native-screens": "^3.34.0",
+    "zustand": "^5.0.1"
+  }
+}
